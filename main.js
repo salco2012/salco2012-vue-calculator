@@ -16,9 +16,6 @@ Vue.createApp({
     calc() {
       this.displayValue = Math.floor(eval(this.displayValue) * 100) / 100;
     },
-    // croppedDisplayValue() {
-    //   return this.displayValue.slice(0, 2)
-    // },
     back() {
       if (this.displayValue) {
         this.displayValue = this.displayValue.substring(
