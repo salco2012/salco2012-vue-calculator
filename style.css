@@ -1,0 +1,46 @@
+[v-cloak] { 
+   display: none;
+}
+
+.grid{ 
+   max-width: 360px;
+   margin: 50px auto;
+   padding: 20px;
+   display: grid;
+   grid-gap: 10px;
+   grid-template-columns: repeat(4, 1fr);
+   background-color: #233244;
+   user-select: none;
+
+}
+
+.item {
+   padding: 15px;
+   border: none;
+   color: white;
+   font-size: 28px;
+   background-color: #31455e;
+   cursor: pointer;
+   transition: .3s ease-in;
+}
+
+.item:hover{
+   transform: scale(1.05);
+   background-color: turquoise;
+}
+
+.input {
+   background-color: #31455e;
+   grid-column: 1/-1;
+   height: 50px;
+   outline: none;
+   text-align: right;
+   padding-right: 10px;
+   font-size: 28px;
+   color: white;
+}
+
+.equally{
+   grid-column: 4/-1;
+   grid-row: 5/7;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Calculator</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div id='app' v-cloak>
+      <div class="grid">
+         <input class="input" type="text" readonly v-bind:value="displayValue">
+         <button class="item" @click="clear()">C</button>
+         <button class="item back" @click="back()">&loarr;</button>
+         <button class="item" @click="percent()">%</button>
+         <button class="item" v-for="i of item" @click="buttonShow(i)">{{i}}</button>
+         <button class="item equally" id='equally' @click="calc()">=</button>
+      </div>
+   </div>
+   <script src="https://unpkg.com/vue@next"></script>
+   <script src="main.js"></script>
+</body>
+
+</html>
